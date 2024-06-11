@@ -13,16 +13,16 @@
   - Basic “Hello World” application, brief explanation of the main function
   - Compiling and running Java applications 
   - Navigate to file location in command line
-  - Compile with: `javac JavaSpringApplication.java`
-  - Run compiled class with: `java JavaSpringApplication`
+  - Compile with: `javac com.gde.spring.JavaSpringApplication.java`
+  - Run compiled class with: `java com.gde.spring.JavaSpringApplication`
   - Easier method is just pressing the green play icon next to the main function in IntelliJ
 #### 1.7 Summary: 
   - Overview of Java documentation and resources 
   - Java Editions: SE, EE, ME
 
 ## 2. Java Basics: Syntax and Structure
-#### 1.1 Introduction
-#### 1.2 Basic syntax and structure of a Java program
+#### 2.1 Introduction
+#### 2.2 Basic syntax and structure of a Java program
   - Explain basic syntax, and package-path relations
 - Java data types and variables
 - Operators and expressions

@@ -1,3 +1,5 @@
+package com.gde.spring;
+
 public class JavaSpringApplication {
 
     /**
