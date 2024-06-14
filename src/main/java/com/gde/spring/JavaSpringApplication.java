@@ -8,22 +8,21 @@ public class JavaSpringApplication {
      */
     public static void main(String[] args) {
 
-        // Explain comparison operators, <, >, <=, >=, !, ==, !=, &&, ^
-        int num = 10;
-        if (num == 5) {
-            System.out.println("Exactly 5");
-        } else if(num < 5) {
-            System.out.println("Less than 5");
-        } else {
-            System.out.println("Greater than 5");
+        // Explain the significance of each of the loping constructs and their use cases and their nature
+        for (int i = 0; i < 5; i++) {
+            System.out.println("For Loop: " + i);
         }
 
-        switch (num) {
-            case 10:
-                System.out.println("Ten");
-                break;
-            default:
-                System.out.println("Not Ten");
+        int j = 0;
+        while (j < 5) {
+            System.out.println("While Loop: " + j);
+            j++;
         }
+
+        int k = 0;
+        do {
+            System.out.println("Do-While Loop: " + k);
+            k++;
+        } while (k < 5);
     }
 }
