@@ -4,6 +4,7 @@
 
 #### 1.1 Introduction
 #### 1.2 History and evolution of Java
+  - Java was created by James Gosling and his team at Sun Microsystems in 1995
 #### 1.3 Installing the Java Development Kit (JDK)
   - At least Java 17 is required, commands need to be added to PATH variable
 #### 1.4 Setting up your development environment (IDE setup)
@@ -17,20 +18,24 @@
   - Run compiled class with: `java com.gde.spring.JavaSpringApplication`
   - Easier method is just pressing the green play icon next to the main function in IntelliJ
 #### 1.7 Summary: 
-  - Overview of Java documentation and resources 
+  - Overview of Java documentation and resources
+    - Use Oracle's [Java Documentation](https://docs.oracle.com/en/java/) for reference.
   - Java Editions: SE, EE, ME
+    - Java SE (Standard Edition) for desktop and server applications. 
+    - Java EE (Enterprise Edition) for large-scale enterprise applications. 
+    - Java ME (Micro Edition) for mobile and embedded devices.
 
 ## 2. Java Basics: Syntax and Structure
 #### 2.1 Introduction
 #### 2.2 Basic syntax and structure of a Java program
   - Explain basic syntax, and package-path relations
-- Java data types and variables
-- Operators and expressions
-- Control flow statements: if-else, switch
-- Looping constructs: for, while, do-while
-- Methods: declaration and invocation
-- Parameter passing and return values
-- Scope and lifetime of variables
+#### 2.3 Java data types and variables
+  - Operators and expressions
+#### 2.4 Control flow statements: if-else, switch
+#### 2.5 Looping constructs: for, while, do-while
+#### 2.6 Methods: declaration and invocation
+  - Parameter passing and return values
+#### 2.7 Scope and lifetime of variables
 
 ## 3. Object-Oriented Programming in Java
 - Principles of Object-Oriented Programming (OOP)
