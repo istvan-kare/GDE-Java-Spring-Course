@@ -36,6 +36,7 @@
 #### 2.6 Methods: declaration and invocation
   - Parameter passing and return values
 #### 2.7 Scope and lifetime of variables
+#### 2.8 Summary
 
 ## 3. Object-Oriented Programming in Java
 - Principles of Object-Oriented Programming (OOP)
