@@ -8,21 +8,28 @@ public class JavaSpringApplication {
      */
     public static void main(String[] args) {
 
-        // Explain the significance of each of the loping constructs and their use cases and their nature
-        for (int i = 0; i < 5; i++) {
-            System.out.println("For Loop: " + i);
-        }
+        int num = 11;
+        boolean result = isEven(num);
 
-        int j = 0;
-        while (j < 5) {
-            System.out.println("While Loop: " + j);
-            j++;
-        }
+        System.out.println("Is even?\n" + result);
 
-        int k = 0;
-        do {
-            System.out.println("Do-While Loop: " + k);
-            k++;
-        } while (k < 5);
+        addOne(num);
+
+        System.out.println(num);
+    }
+
+    /**
+     * Takes a number and determines if the passed parameter is even
+     * @param num number to be evaluated
+     * @return boolean value representing if the parameter num is even
+     */
+    // Explain parameter passing and return values
+    public static boolean isEven(int num) {
+        return num % 2 == 0;
+    }
+
+    // Explain void return type, explain behaviour of parameters as demonstrated above in main
+    public static void addOne(int num) {
+        num++;
     }
 }
