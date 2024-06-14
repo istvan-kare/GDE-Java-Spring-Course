@@ -39,14 +39,17 @@
 #### 2.8 Summary
 
 ## 3. Object-Oriented Programming in Java
-- Principles of Object-Oriented Programming (OOP)
-- Defining classes and creating objects
-- Constructors and initialization
-- Inheritance: extending classes
+#### 3.1 Introduction
+#### 3.2. Principles of Object-Oriented Programming (OOP)
+  - Encapsulation, Inheritance, Polymorphism, and Abstraction
+#### 3.3. Defining Classes and Creating Objects
+  - Constructors and Initialization
+#### 3.4. Inheritance: Extending Classes
 - Polymorphism: method overriding and overloading
-- Encapsulation: access modifiers and properties
-- Abstract classes and methods
-- Interfaces and implementation
+#### 3.5. Encapsulation: Access Modifiers and Properties
+#### 3.6. Abstract Classes and Methods
+#### 3.7 Interfaces and Implementation
+#### 3.8 Summary
 
 ## 4. Exception Handling in Java
 - Introduction to exceptions and error handling
