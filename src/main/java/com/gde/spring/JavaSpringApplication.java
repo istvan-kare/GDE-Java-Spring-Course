@@ -1,8 +1,8 @@
 package com.gde.spring;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class JavaSpringApplication {
 
@@ -12,17 +12,18 @@ public class JavaSpringApplication {
      */
     public static void main(String[] args) {
 
-        // Explain differences and behaviour of both Set, HashSet and TreeSet
-        Set<String> hashSet = new HashSet<>();
-        hashSet.add("Alice");
-        hashSet.add("Bob");
-        hashSet.add("Bob"); // Duplicates are not allowed and wil  not be added to a Set
+        // Explain differences and behaviour of both Map, HashMap and TreeMap
+        Map<Integer, String> hashMap = new HashMap<>();
+        hashMap.put(1, "Alice");
+        hashMap.put(2, "Bob");
 
-        Set<String> treeSet = new TreeSet<>();
-        treeSet.add("Charlie");
-        treeSet.add("Dave");
+        Map<Integer, String> treeMap = new TreeMap<>();
+        treeMap.put(3, "Charlie");
+        treeMap.put(4, "Dave");
 
-        System.out.println("HashSet: " + hashSet);
-        System.out.println("TreeSet: " + treeSet);
+        System.out.println("HashMap: " + hashMap);
+        System.out.println("TreeMap: " + treeMap);
+
+        System.out.println(treeMap.get(3)); // Get value by associated key
     }
 }
