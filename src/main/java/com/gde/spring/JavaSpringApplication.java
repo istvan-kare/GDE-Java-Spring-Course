@@ -1,5 +1,9 @@
 package com.gde.spring;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class JavaSpringApplication {
 
     /**
@@ -8,18 +12,18 @@ public class JavaSpringApplication {
      */
     public static void main(String[] args) {
 
-        try {
-            method1();
-        } catch (Exception e) {
-            e.printStackTrace(); // We print the stacktrace to be able to better identify the source of the error
-        }
-    }
+        // Explain differences and behaviour of both List, ArrayList and LinkedList
+        List<String> arrayList = new ArrayList<>();
+        arrayList.add("Alice");
+        arrayList.add("Bob");
+        arrayList.remove(0);
 
-    static void method1() throws Exception {
-        method2();
-    }
+        List<String> linkedList = new LinkedList<>();
+        linkedList.add("Charlie");
+        linkedList.add("Dave");
+        linkedList.addAll(arrayList);
 
-    static void method2() throws Exception {
-        throw new Exception("Exception in method2");
+        System.out.println("ArrayList: " + arrayList);
+        System.out.println("LinkedList: " + linkedList);
     }
 }

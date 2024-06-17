@@ -70,14 +70,16 @@
 #### 4.9 Summary
 
 ## 5. Java Collections Framework
-- Overview of the Collections Framework
-- List interface and ArrayList/LinkedList implementations
-- Set interface and HashSet/TreeSet implementations
-- Map interface and HashMap/TreeMap implementations
-- Queue interface and PriorityQueue implementation
-- Using Iterators and enhanced for loop
-- Sorting and searching collections
-- Understanding generics in collections
+#### 5.1 Introduction
+#### 5.2 Overview of the Collections Framework
+- Collections framework provides various classes and interfaces to store and manipulate groups of data
+#### 5.3 List interface and ArrayList/LinkedList implementations
+#### 5.4 Set interface and HashSet/TreeSet implementations
+#### 5.5 Map interface and HashMap/TreeMap implementations
+#### 5.6 Using Iterators and enhanced for loop
+#### 5.7 Sorting and searching collections
+#### 5.8 Understanding generics in collections
+#### 5.9 Summary
 
 ## 6. Java I/O and File Handling
 - Introduction to Java I/O
