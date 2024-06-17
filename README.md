@@ -52,14 +52,19 @@
 #### 3.8 Summary
 
 ## 4. Exception Handling in Java
-- Introduction to exceptions and error handling
-- Types of exceptions: checked and unchecked
-- Using try-catch blocks
-- Finally block and its usage
-- Throwing exceptions: throw and throws keywords
-- Creating custom exception classes
-- Best practices for exception handling
-- Understanding the stack trace
+#### 4.1 Introduction
+#### 4.2 Introduction to exceptions and error handling
+- Exceptions represent errors that can occur during program execution
+#### 4.3 Types of exceptions: checked and unchecked
+- Checked exceptions: `IOException` 
+- Unchecked exceptions: `ArrayIndexOutOfBoundsException`
+#### 4.4 Using try-catch blocks
+- `finally` block and its usage
+#### 4.5 Throwing exceptions: throw and throws keywords
+#### 4.6 Creating custom exception classes
+#### 4.7 Best practices for exception handling
+#### 4.8 Understanding the stack trace
+#### 4.9 Summary
 
 ## 5. Java Collections Framework
 - Overview of the Collections Framework

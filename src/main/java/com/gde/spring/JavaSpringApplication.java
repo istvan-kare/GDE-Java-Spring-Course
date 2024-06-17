@@ -8,10 +8,12 @@ public class JavaSpringApplication {
      */
     public static void main(String[] args) {
 
-//       Animal animal = new Animal(); Throws error as it's an abstract class with no definition
-
-        Cat cat = new Cat();
-
-        cat.makeSound(); //We defined the function as part of extending the Animal abstract class
+        try {
+            int data = 50 / 0;
+        } catch (ArithmeticException e) { // Catch block to handle thrown exceptions
+            System.out.println("Arithmetic Exception: " + e);
+        } finally { // Finally block to be always executed, like for closing network connection or file
+            System.out.println("Finally block is always executed");
+        }
     }
 }
