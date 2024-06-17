@@ -1,8 +1,8 @@
 package com.gde.spring;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class JavaSpringApplication {
 
@@ -12,18 +12,26 @@ public class JavaSpringApplication {
      */
     public static void main(String[] args) {
 
-        // Explain differences and behaviour of both Map, HashMap and TreeMap
-        Map<Integer, String> hashMap = new HashMap<>();
-        hashMap.put(1, "Alice");
-        hashMap.put(2, "Bob");
+        List<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
 
-        Map<Integer, String> treeMap = new TreeMap<>();
-        treeMap.put(3, "Charlie");
-        treeMap.put(4, "Dave");
+        // These two do the same with the main exception being is that iterator can remove elements from the collection
+        Iterator<String> iterator = names.iterator();
+        while (iterator.hasNext()) {
 
-        System.out.println("HashMap: " + hashMap);
-        System.out.println("TreeMap: " + treeMap);
+            String name = iterator.next();
+            if (name.equals("Bob")) {
+                iterator.remove();
+            }
+        }
+        // Can be replaced by names.removeIf(...) function
 
-        System.out.println(treeMap.get(3)); // Get value by associated key
+        System.out.println(names);
+
+        for (String name : names) {
+            System.out.println(name);
+        }
     }
 }
