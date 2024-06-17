@@ -9,11 +9,17 @@ public class JavaSpringApplication {
     public static void main(String[] args) {
 
         try {
-            int data = 50 / 0;
-        } catch (ArithmeticException e) { // Catch block to handle thrown exceptions
-            System.out.println("Arithmetic Exception: " + e);
-        } finally { // Finally block to be always executed, like for closing network connection or file
-            System.out.println("Finally block is always executed");
+            checkAge(15);
+        } catch (Exception e) { // We handle the exception thrown in the method
+            System.out.println("Exception: " + e.getMessage());
+        }
+    }
+
+    static void checkAge(int age) throws Exception { // With throws we declare that this method can throw the following exception and should be handled when this method is called
+        if (age < 18) {
+            throw new Exception("Not eligible to vote"); // We throw and exception that will propagate upwwards
+        } else {
+            System.out.println("Eligible to vote");
         }
     }
 }
