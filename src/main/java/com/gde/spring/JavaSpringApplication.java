@@ -8,15 +8,7 @@ public class JavaSpringApplication {
      */
     public static void main(String[] args) {
 
-//        Animal animal = new Animal(); Throws error as it's an abstract class with no definition
-        Animal animal = new Animal() {
-            @Override
-            void makeSound() {
-                System.out.println("Moo!");
-            }
-        }; // Directly define the abstract function
-
-        animal.makeSound();
+//       Animal animal = new Animal(); Throws error as it's an abstract class with no definition
 
         Cat cat = new Cat();
 
