@@ -1,8 +1,8 @@
 package com.gde.spring;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class JavaSpringApplication {
 
@@ -12,18 +12,17 @@ public class JavaSpringApplication {
      */
     public static void main(String[] args) {
 
-        // Explain differences and behaviour of both List, ArrayList and LinkedList
-        List<String> arrayList = new ArrayList<>();
-        arrayList.add("Alice");
-        arrayList.add("Bob");
-        arrayList.remove(0);
+        // Explain differences and behaviour of both Set, HashSet and TreeSet
+        Set<String> hashSet = new HashSet<>();
+        hashSet.add("Alice");
+        hashSet.add("Bob");
+        hashSet.add("Bob"); // Duplicates are not allowed and wil  not be added to a Set
 
-        List<String> linkedList = new LinkedList<>();
-        linkedList.add("Charlie");
-        linkedList.add("Dave");
-        linkedList.addAll(arrayList);
+        Set<String> treeSet = new TreeSet<>();
+        treeSet.add("Charlie");
+        treeSet.add("Dave");
 
-        System.out.println("ArrayList: " + arrayList);
-        System.out.println("LinkedList: " + linkedList);
+        System.out.println("HashSet: " + hashSet);
+        System.out.println("TreeSet: " + treeSet);
     }
 }
