@@ -1,8 +1,7 @@
 package com.gde.spring;
 
-public class Animal {
+// Explain abstract keyword (restricted class that cannot be used to create objects)
+abstract class Animal {
 
-    void makeSound() {
-        System.out.println("Animal sound");
-    }
+    abstract void makeSound();
 }
