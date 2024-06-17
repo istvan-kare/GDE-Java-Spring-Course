@@ -9,11 +9,17 @@ public class JavaSpringApplication {
     public static void main(String[] args) {
 
         try {
-            throw new CustomException("This is a custom Exception"); // We throw the custom exception
-        } catch (CustomException ce) { // We handle the exception thrown
-            System.out.println(ce.getMessage());
-        } catch (Exception e) { // Catch blocks can be stacked to be able to easily handle multiple cases, the most generic should be the last
-            System.out.println("Exception: " + e.getMessage());
+            method1();
+        } catch (Exception e) {
+            e.printStackTrace(); // We print the stacktrace to be able to better identify the source of the error
         }
+    }
+
+    static void method1() throws Exception {
+        method2();
+    }
+
+    static void method2() throws Exception {
+        throw new Exception("Exception in method2");
     }
 }

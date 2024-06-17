@@ -63,6 +63,9 @@
 #### 4.5 Throwing exceptions: throw and throws keywords
 #### 4.6 Creating custom exception classes
 #### 4.7 Best practices for exception handling
+- Use specific exception types.
+- Log exceptions.
+- Do not swallow exceptions.
 #### 4.8 Understanding the stack trace
 #### 4.9 Summary
 
