@@ -9,17 +9,11 @@ public class JavaSpringApplication {
     public static void main(String[] args) {
 
         try {
-            checkAge(15);
-        } catch (Exception e) { // We handle the exception thrown in the method
+            throw new CustomException("This is a custom Exception"); // We throw the custom exception
+        } catch (CustomException ce) { // We handle the exception thrown
+            System.out.println(ce.getMessage());
+        } catch (Exception e) { // Catch blocks can be stacked to be able to easily handle multiple cases, the most generic should be the last
             System.out.println("Exception: " + e.getMessage());
-        }
-    }
-
-    static void checkAge(int age) throws Exception { // With throws we declare that this method can throw the following exception and should be handled when this method is called
-        if (age < 18) {
-            throw new Exception("Not eligible to vote"); // We throw and exception that will propagate upwwards
-        } else {
-            System.out.println("Eligible to vote");
         }
     }
 }
