@@ -78,10 +78,10 @@
 #### 5.5 Map interface and HashMap/TreeMap implementations
 #### 5.6 Using Iterators and enhanced for loop
 #### 5.7 Sorting and searching collections
-#### 5.8 Understanding generics in collections
-#### 5.9 Summary
+#### 5.8 Summary
 
 ## 6. Java I/O and File Handling
+- Introduction
 - Introduction to Java I/O
 - Byte streams and character streams
 - Reading from and writing to files
@@ -90,6 +90,7 @@
 - Working with Java NIO (New I/O)
 - File handling with the File class
 - Exception handling in I/O operations
+- Summary
 
 ## 7. Introduction to Spring Boot
 - Overview of the Spring Framework
