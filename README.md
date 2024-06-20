@@ -81,16 +81,15 @@
 #### 5.8 Summary
 
 ## 6. Java I/O and File Handling
-- Introduction
-- Introduction to Java I/O
-- Byte streams and character streams
-- Reading from and writing to files
-- BufferedReader and BufferedWriter
-- Serialization and deserialization
-- Working with Java NIO (New I/O)
-- File handling with the File class
-- Exception handling in I/O operations
-- Summary
+#### 6.1 Introduction
+- Java provides `java.io` and `java.nio` packages for I/O operations.
+#### 6.2 Byte streams and character streams
+- Reading from and writing to files - `BufferedReader` and `BufferedWriter`
+#### 6.3 Serialization and deserialization
+#### 6.4 Working with Java NIO (New I/O)
+#### 6.5 File handling with the File class
+#### 6.6 Exception handling in I/O operations
+#### 6.7 Summary
 
 ## 7. Introduction to Spring Boot
 - Overview of the Spring Framework

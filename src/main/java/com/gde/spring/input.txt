@@ -1,0 +1,2 @@
+Some text to be used as an input.
+Some other text.

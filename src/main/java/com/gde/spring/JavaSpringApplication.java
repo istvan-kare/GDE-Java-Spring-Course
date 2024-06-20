@@ -1,8 +1,12 @@
 package com.gde.spring;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class JavaSpringApplication {
 
@@ -12,25 +16,36 @@ public class JavaSpringApplication {
      */
     public static void main(String[] args) {
 
-        List<String> names = new ArrayList<>();
-        names.add("Bob");
-        names.add("Charlie");
-        names.add("Alice");
+        try (
+            FileInputStream sourceStream = new FileInputStream("src/main/java/com/gde/spring/input.txt");
+            FileOutputStream targetStream = new FileOutputStream("src/main/java/com/gde/spring/destination.txt")
+            // Adding the stream initialization as such is the same as calling close in a finally block
+        ) {
 
-        // Explain sorting algorithms and what happens under the hood when calling the sort method
-        Collections.sort(names);
-        System.out.println("Sorted: " + names);
+            // Reading source file using read method
+            // and write to file byte by byte using write method
+            int temp;
+            while ((temp = sourceStream.read()) != -1)
+                targetStream.write((byte) temp);
+        } catch (IOException e) {
+            System.err.println("Error during file manipulation: " + e.getMessage());
+        }
+    }
 
-        //Explain binary search - list needs to be sorted for it to work
-        int index = Collections.binarySearch(names, "Bob");
-        System.out.println("Index of Bob: " + index);
-
-        // Explain comparators when manually sorting
-        names.sort((a, b) ->
-            a.substring(a.length() - 1).compareTo(b.substring(b.length() - 1)));
-        System.out.println("Sorted by last character: " + names);
-
-        int anotherIndex = names.indexOf("Bob");
-        System.out.println("Another index of Bob: " + anotherIndex);
+    // BufferedReader comes in handy if we want to read text from any kind of input source whether that be files, sockets, or something else
+    // It enables us to minimize the number of I/O operations by reading chunks of characters and storing them in an internal buffer.
+    void bufferedReaderAndWriter() {
+        try (
+            BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("input.txt"))
+        ) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                writer.write(line);
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
