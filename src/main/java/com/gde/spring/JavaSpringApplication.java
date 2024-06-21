@@ -1,10 +1,9 @@
 package com.gde.spring;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class JavaSpringApplication {
 
@@ -14,19 +13,13 @@ public class JavaSpringApplication {
      */
     public static void main(String[] args) {
 
-        User user = new User("Alice", 30);
-
-        // Explain serialization in general when it is needed and used
-        try (
-            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("user.ser"));
-            ObjectInputStream in = new ObjectInputStream(new FileInputStream("user.ser"))
-        ) {
-            out.writeObject(user);
-
-            User deserializedUser = (User) in.readObject();
-
-            System.out.println("Deserialized Person: " + deserializedUser.name + ", " + deserializedUser.age);
-        } catch (IOException | ClassNotFoundException e) {
+        // Brief explanation on usages and advantages
+        Path path = Paths.get("example.txt");
+        try {
+            Files.write(path, "Hello, NIO!".getBytes());
+            String content = new String(Files.readAllBytes(path));
+            System.out.println(content);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
